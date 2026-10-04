@@ -20,7 +20,7 @@ interface Desenvolvedor {
 
 ### 💸 [MyCosts](https://github.com/RafhaellPrates/mycosts) · [no ar](https://mycosts.onrender.com)
 
-App de controle financeiro pessoal que substituiu minha planilha: feito para uso diário de até 4 pessoas, no celular e no PC.
+App de controle financeiro pessoal que substituiu minha planilha: feito para uso diário, no celular e no PC.
 
 - ⚛️ **React + TypeScript** (Vite) com layout responsivo: barra lateral no PC, abas no celular
 - 🟢 **API REST em Node + Express + TypeScript**, validação com **zod**
