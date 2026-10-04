@@ -8,25 +8,33 @@
 interface Desenvolvedor {
   nome: "Rafhael Prates";
   cargo: "Desenvolvedor Full-Stack";
-  stack: ["Node.js", "Express", "React", "MySQL"];
+  stack: ["TypeScript", "Node.js", "Express", "React", "PostgreSQL", "MySQL"];
   foco: "APIs REST seguras + interfaces SPA em React";
-  diferenciais: ["Autenticacao JWT", "Isolamento multiusuario", "Codigo orientado a requisitos"];
+  diferenciais: ["Autenticacao JWT", "Isolamento multiusuario", "Deploy em producao", "Codigo orientado a requisitos"];
 }
 ```
 
 ---
 
-## 🚀 No que estou trabalhando
+## 🚀 Projeto principal
 
-Estou transformando meu **Sistema de Controle Financeiro Pessoal** de uma aplicação server-rendered (Handlebars) em uma aplicação **full-stack moderna**: API REST em Express + front SPA em React.
+### 💸 [MyCosts](https://github.com/RafhaellPrates/mycosts) · [no ar](https://mycosts.onrender.com)
 
-➡️ [**Sistema de Controle Financeiro Pessoal**](https://github.com/RafhaellPrates/Sistema-de-Controle-Financeiro-Pessoal)
-- 🔐 Autenticação com **JWT** (cookie httpOnly) e senhas com **bcrypt**
-- 👤 **Isolamento de dados por usuário** (cada um vê só as próprias movimentações)
-- 🔁 Backend já refatorado de views para **API REST** (rotas padronizadas, CORS)
-- ⚛️ Front em **React + Vite** em construção, consumindo a API
+App de controle financeiro pessoal que substituiu minha planilha: feito para uso diário de até 4 pessoas, no celular e no PC.
 
-🧪 [**React Katas**](https://github.com/RafhaellPrates/react-katas) — meus treinos de front: estado, renderização condicional e tratamento de dados ausentes.
+- ⚛️ **React + TypeScript** (Vite) com layout responsivo: barra lateral no PC, abas no celular
+- 🟢 **API REST em Node + Express + TypeScript**, validação com **zod**
+- 🐘 **PostgreSQL** com migrations versionadas em SQL (Supabase só como host)
+- 🔐 Login próprio com **bcrypt + JWT**, níveis **admin e usuário**, isolamento de dados por pessoa
+- 💳 Cartões com fatura, **parcelamento** e recomendação do melhor cartão para comprar no dia
+- 📊 Painel com gráficos em **SVG próprio** (barras e rosca), temas e cores salvos por usuário
+- 📤 Exportação para **.xlsx** no layout da planilha original
+- 🚀 Front e API num único serviço no **Render**
+
+### Outros projetos
+
+- [**Sistema de Controle Financeiro Pessoal**](https://github.com/RafhaellPrates/Sistema-de-Controle-Financeiro-Pessoal): primeira versão, de Handlebars para API REST em Express com front em React, autenticação JWT em cookie httpOnly.
+- 🧪 [**React Katas**](https://github.com/RafhaellPrates/react-katas): treinos de front (estado, renderização condicional e dados ausentes).
 
 ---
 
@@ -34,9 +42,11 @@ Estou transformando meu **Sistema de Controle Financeiro Pessoal** de uma aplica
 
 **Back-end**
 
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 ![Node](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
 ![Express](https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white)
 ![Sequelize](https://img.shields.io/badge/Sequelize-52B0E7?style=for-the-badge&logo=sequelize&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 
 **Front-end**
@@ -48,6 +58,8 @@ Estou transformando meu **Sistema de Controle Financeiro Pessoal** de uma aplica
 **Ferramentas & fundamentos**
 
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![Render](https://img.shields.io/badge/Render-46E3B7?style=for-the-badge&logo=render&logoColor=black)
+![Supabase](https://img.shields.io/badge/Supabase-3FCF8E?style=for-the-badge&logo=supabase&logoColor=white)
 ![C](https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black)
 
 ---
@@ -58,7 +70,8 @@ Estou transformando meu **Sistema de Controle Financeiro Pessoal** de uma aplica
 class FocoTecnico:
     aprofundando = [
         "⚛️ React: estado, hooks, renderizacao condicional, data-fetching",
-        "🔄 Arquitetura desacoplada: SPA React + API REST (Express)",
+        "🔄 Arquitetura: SPA React + API REST (Express) em TypeScript",
+        "🐘 Banco relacional: PostgreSQL, migrations e consultas com SQL puro",
         "🔐 Seguranca de API: JWT, bcrypt, CORS",
         "🧪 Engenharia: requisitos e criterios de aceite antes do codigo"
     ]
